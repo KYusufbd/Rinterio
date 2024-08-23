@@ -106,7 +106,9 @@
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "daisyui": "^4.12.10"
+  },
   "scripts": {
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
