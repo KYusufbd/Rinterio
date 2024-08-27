@@ -8,11 +8,17 @@ module.exports = {
     
     fontSize: {
       base: ['16px', '24px'],
-      "3xl": "32px",
+      "4.5xl" : ['40px', 'auto'],
+      'xl' : ['20px', 'auto'],
+      "2xl" : ['24px', 'auto'],
+      "3xl": ['32px', 'auto'],
     },
 
     fontWeight: {
-      bold: '700'
+      medium: '500',
+      bold: '700',
+      extrabold: '800'
+
     },
 
     extend: {
