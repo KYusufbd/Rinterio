@@ -18,6 +18,10 @@ module.exports = {
         "txt-color-3": '#737373',
         "txt-color-4": '#1C1C1C',
         "body-bg": '#F4F4F4',
+      },
+
+      maxWidth: {
+        "page-width": "73rem"
       }
     },
   },

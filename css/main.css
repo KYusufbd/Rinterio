@@ -8,3 +8,7 @@
       src: url(../assets/fonts/Manrope-VariableFont_wght.ttf);
     }
   }
+
+  * {
+    box-sizing: border-box;
+  }
