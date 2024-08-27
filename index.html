@@ -14,17 +14,21 @@
         else {
           navMenu.style.display = "none";
         }
-      }
+      };
+
+      console.log(`Current screen width is ${window.innerWidth} pixel.`)
     </script>
 </head>
-<body class="bg-body-bg w-full font-manrope min-h-screen px-8 py-4">
-    <header class="w-full max-w-page-width overflow-hidden mx-auto">
-        <div class="navbar justify-between w-full bg-transparent">
-            <div class="navbar-start w-auto">
-              <a href="/" class="flex flex-row items-center gap-2 font-extrabold text-txt-color-1 text-3xl">
-                <div class="w-8 h-8 bg-primary flex justify-center items-center rounded-full">
-                  <svg width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#1c1c1c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </div>
+<body class="relative flex flex-col bg-body-bg w-full h-max font-manrope p-0 m-0">
+  <div class=" w-full h-auto m-0 p-0 bg-gradient-to-t from-white to-transparent">
+    <header class="flex flex-col gap-8 w-full px-5 md:px-8 max-w-page-width overflow-hidden mx-auto pb-8 md:pb-16 lg:pb-24">
+      <!-- Navbar -->
+      <div class="navbar justify-between w-full bg-transparent">
+        <div class="navbar-start w-auto">
+          <a href="/" class="flex flex-row items-center gap-2 font-extrabold text-txt-color-1 text-3xl">
+            <div class="w-8 h-8 bg-primary flex justify-center items-center rounded-full">
+              <svg width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#1c1c1c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
                 Rinterio
               </a>
             </div>
@@ -53,18 +57,45 @@
               <div class="p-2.5 rounded-full cursor-pointer hover:bg-white transition-colors hidden md:flex">
                 <svg width="36px" height="36px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3.2" stroke="#737373" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline points="4.62 9.96 15.34 9.96 21.71 37.85 49.69 37.85 56.17 16.35 16.67 15.79"></polyline><path d="M51.73,44.35H21.67a3.21,3.21,0,0,1-3.28-3.28c0-3.22,3.32-3.22,3.32-3.22"></path><circle cx="24.95" cy="51.61" r="3.53"></circle><circle cx="46.04" cy="51.61" r="3.53"></circle></g></svg>
               </div>
+              <!-- Book Consult Button -->
               <a class="btn text-[20px] font-extrabold text-txt-color-4 bg-primary-50 rounded-full border-none hover:bg-primary hidden md:flex" >
                 Book Consult
                 <div class="w-8 h-8 bg-txt-color-4 flex justify-center items-center rounded-full">
-                  <svg class="hidden" width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#1c1c1c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                   <svg class="" width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                 </div>
               </a>
+              <!-- Dropdown menu button -->
               <div onclick="menuToggle()" tabindex="0" role="button" class="btn btn-ghost lg:hidden p-2.5 rounded-full hover:bg-white transition-colors">
                 <svg width="36px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#737373" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
               </div>
             </div>
         </div>
+
+        <!-- Hero area -->
+        <section class="max-w-page-width flex flex-col gap-6">
+          <!-- Hero image -->
+          <div class="flex justify-center items-center">
+            <img src="./assets/images/banner.png" alt="barn-house">
+          </div>
+          <!-- Hero area text -->
+          <div class="flex flex-col items-center gap-8">
+            <div class="flex flex-col items-center gap-6">
+              <h1 class="font-extrabold text-[28px] md:text-[36px] lg:text-[64px] text-center text-txt-color-1">A barn house of this design has a striking appearance</h1>
+              <p class="font-medium text-txt-color-2 text-center w-full md:w-11/12">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <a class="btn text-[20px] font-extrabold text-txt-color-4 bg-primary-50 rounded-full border-none hover:bg-primary flex justify-center items-center" >
+              View Details
+              <div class="w-8 h-8 bg-primary flex justify-center items-center rounded-full">
+                <svg class="" width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#1c1c1c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </div>
+            </a>
+          </div>
+        </section>
     </header>
+  </div>
+  
+  <main>
+
+  </main>
 </body>
 </html>

@@ -21,7 +21,7 @@ module.exports = {
       },
 
       maxWidth: {
-        "page-width": "73rem"
+        "page-width": "69rem"
       }
     },
   },
