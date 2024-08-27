@@ -20,8 +20,10 @@
     </script>
 </head>
 <body class="relative flex flex-col bg-body-bg w-full h-max font-manrope p-0 m-0">
+  <!-- Header section background div -->
   <div class=" w-full h-auto m-0 p-0 bg-gradient-to-t from-white to-transparent">
     <header class="flex flex-col gap-8 w-full px-5 md:px-8 max-w-page-width overflow-hidden mx-auto pb-8 md:pb-16 lg:pb-24">
+      
       <!-- Navbar -->
       <div class="navbar justify-between w-full bg-transparent">
         <div class="navbar-start w-auto">
@@ -69,33 +71,57 @@
                 <svg width="36px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#737373" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
               </div>
             </div>
-        </div>
+      </div>
 
-        <!-- Hero area -->
-        <section class="max-w-page-width flex flex-col gap-6">
-          <!-- Hero image -->
-          <div class="flex justify-center items-center">
-            <img src="./assets/images/banner.png" alt="barn-house">
+      <!-- Hero area -->
+      <section class="max-w-page-width flex flex-col gap-6">
+        <!-- Hero image -->
+        <div class="flex justify-center items-center">
+          <img src="./assets/images/banner.png" alt="barn-house">
+        </div>
+        <!-- Hero area text -->
+        <div class="flex flex-col items-center gap-8">
+          <div class="flex flex-col items-center gap-6">
+            <h1 class="font-extrabold text-[28px] md:text-[36px] lg:text-[64px] text-center text-txt-color-1">A barn house of this design has a striking appearance</h1>
+            <p class="font-medium text-txt-color-2 text-center w-full md:w-11/12">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
           </div>
-          <!-- Hero area text -->
-          <div class="flex flex-col items-center gap-8">
-            <div class="flex flex-col items-center gap-6">
-              <h1 class="font-extrabold text-[28px] md:text-[36px] lg:text-[64px] text-center text-txt-color-1">A barn house of this design has a striking appearance</h1>
-              <p class="font-medium text-txt-color-2 text-center w-full md:w-11/12">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <!-- View details Button -->
+          <a class="btn text-[20px] w-full md:w-auto font-extrabold text-txt-color-4 bg-primary-50 rounded-full border-none hover:bg-primary flex justify-center items-center" >
+            View Details
+            <div class="w-8 h-8 bg-primary flex justify-center items-center rounded-full">
+              <svg class="" width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#1c1c1c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </div>
-            <a class="btn text-[20px] font-extrabold text-txt-color-4 bg-primary-50 rounded-full border-none hover:bg-primary flex justify-center items-center" >
-              View Details
-              <div class="w-8 h-8 bg-primary flex justify-center items-center rounded-full">
-                <svg class="" width="184px" height="184px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#1c1c1c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-              </div>
-            </a>
-          </div>
-        </section>
+          </a>
+        </div>
+      </section>
     </header>
   </div>
   
   <main>
-
+    <!-- About Us section -->
+    <section class="max-w-page-width px-5 md:px-8 mx-auto py-8 md:py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2">
+      <!-- About Us text -->
+      <div>
+        <!-- About Us heading with description -->
+        <div class="flex flex-col gap-6">
+          <a href="/" class="btn border-none hover:bg-slate-50 flex flex-row gap-2 px-4 py-2 rounded-full bg-white w-fit">
+            <svg width="24px" height="24px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#494949"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#494949" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            <p class=" font-bold text-txt-color-2">About Us</p>
+          </a>
+          <h2 class="font-bold text-txt-color-1">We design thoughtful, liveable spaces</h2>
+          <p class="text-base font-medium text-txt-color-2">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- About Us cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- About Us image -->
+      <div></div>
+    </section>
   </main>
 </body>
 </html>

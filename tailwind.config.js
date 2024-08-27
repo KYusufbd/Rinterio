@@ -5,10 +5,16 @@ module.exports = {
     fontFamily: {
       'manrope': ['Manrope'],
     },
+    
     fontSize: {
       base: ['16px', '24px'],
       "3xl": "32px",
     },
+
+    fontWeight: {
+      bold: '700'
+    },
+
     extend: {
       colors: {
         "primary": '#abef5f',
