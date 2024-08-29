@@ -30,6 +30,10 @@ module.exports = {
         "txt-color-3": '#737373',
         "txt-color-4": '#1C1C1C',
         "body-bg": '#F4F4F4',
+        "bg-2": '#E7C1D3',
+        "bg-3": '#EFDA6E',
+        "bg-4": '#A4DAC3',
+        "bg-5": '#77AAEA',
       },
 
       maxWidth: {
