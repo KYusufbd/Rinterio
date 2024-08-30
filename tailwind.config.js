@@ -7,11 +7,12 @@ module.exports = {
     },
     
     fontSize: {
+      'sm': ['14px', 'auto'],
       base: ['16px', '24px'],
-      "4.5xl" : ['40px', 'auto'],
-      'xl' : ['20px', 'auto'],
-      "2xl" : ['24px', 'auto'],
+      'xl': ['20px', 'auto'],
+      "2xl": ['24px', 'auto'],
       "3xl": ['32px', 'auto'],
+      "4.5xl" : ['40px', 'auto'],
     },
 
     fontWeight: {
