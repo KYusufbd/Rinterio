@@ -39,6 +39,10 @@ module.exports = {
         "border-color": '#e9e9e9',
       },
 
+      backgroundImage: {
+        "connect-bg": "url('../../assets/images/bg.jpg')",
+      },
+
       maxWidth: {
         "page-width": "69rem"
       }
