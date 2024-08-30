@@ -12,6 +12,12 @@
     @apply md:text-3xl;
     @apply lg:text-4.5xl;
   }
+
+  h5 {
+    @apply font-extrabold;
+    @apply text-xl;
+    @apply md:text-2xl;
+  }
   
   h6 {
     @apply font-extrabold;

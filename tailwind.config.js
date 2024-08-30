@@ -25,6 +25,7 @@ module.exports = {
       colors: {
         "primary": '#abef5f',
         "primary-50": '#abef5f80',
+        "primary-20": '#abef5f33',
         "txt-color-1": '#212121',
         "txt-color-2": '#494949',
         "txt-color-3": '#737373',
@@ -34,6 +35,7 @@ module.exports = {
         "bg-3": '#EFDA6E',
         "bg-4": '#A4DAC3',
         "bg-5": '#77AAEA',
+        "border-color": '#e9e9e9',
       },
 
       maxWidth: {
