@@ -45,6 +45,14 @@ module.exports = {
 
       maxWidth: {
         "page-width": "69rem"
+      },
+
+      borderWidth: {
+        '7': '7px'
+      },
+
+      gridAutoRows: {
+        '3fr': 'minmax(0, 3fr)'
       }
     },
   },
